@@ -1,9 +1,8 @@
 import discord
 import asyncio
-import random
+from random import randint
 
 client = discord.Client()
-secure_random = random.SystemRandom()
 eight_ball = ['hell no', 'it is a risk', 'maybe...', 'sure, why not?', 'hell yeah!']
 
 @client.event
@@ -16,5 +15,5 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith('!8ball'):
-        await client.send_message(message.channel,secure_random.choice(eight_ball))
+        await client.send_message(message.channel, eight_ball[ randint(0, len(eight_ball) ] )
 client.run('Your_Token_Here')
