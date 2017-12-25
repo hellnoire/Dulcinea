@@ -17,6 +17,6 @@ async def on_message(message):
     if message.content.startswith('!8ball'):
         await client.send_message(message.channel, eight_ball[randint(0, len(eight_ball))])
 try:
-    client.run('Your_Token_Here')
+    client.run('vodDA1jVqG84X2ob5sJNqoD9LWA8kNCq')
 except discord.errors.LoginFailure:
     print("Failed to authenticate into Discord with provided token")
