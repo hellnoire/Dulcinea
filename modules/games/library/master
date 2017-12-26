@@ -1,0 +1,5 @@
+# WIP
+inquiry = 'Would you like to read a story?'
+
+def master():
+    return inquiry
