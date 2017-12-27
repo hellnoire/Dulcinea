@@ -74,6 +74,6 @@ async def on_message(message):
     else:
         pass
 try:
-    client.run('Mzk0NzIxMTM3NjgwMDU2MzIz.DSIciQ.f7G1oR2TRORMrSeshf0ugiebkEE')
+    client.run('token')
 except discord.errors.LoginFailure:
     print("Failed to authenticate into Discord with provided token")
