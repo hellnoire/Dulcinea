@@ -3,6 +3,7 @@ from PyDictionary import PyDictionary
 
 client = discord.Client()
 dictionary = PyDictionary()
+usercount = 0
 
 @client.event
 async def on_ready():
@@ -21,6 +22,12 @@ from modules.games.library.master import master
 
 @client.event
 async def on_message(message):
+	if usercount=<25:
+	await client.send_message(message.channel "Please stop spamming the bot, or it will be disabled and the appropriate people will be notified.")
+	elif usercount=100
+	await client.send_message(message.channel "Goodbye.")
+	sys.exit()
+	else
     pass
     if message.content.startswith('!Help'):
         await client.send_message(message.channel, help())
@@ -28,9 +35,11 @@ async def on_message(message):
         await client.send_message(message.channel, commands())
     elif message.content.startswith('!8ball'):
         await client.send_message(message.channel, eightball())
+		((usercount++))
     elif message.content.startswith('!Story'):
         await client.send_message(message.channel, master())
     elif message.content.startswith('!Snark'):
+		((usercount++))
         await client.send_message(message.channel, snark())
     elif message.content.startswith('!define'):
         word = message.content.split(' ')[1]
